@@ -6,26 +6,34 @@
         background: rgba(255,255,255, .85);
         margin-left: 0 !important;
         transition: .4s ease-in-out;
-        
-        
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-image:
+        linear-gradient(to bottom,  black, rgba(0, 0, 0, 0)) 1 100%;
+        border-left: none;
     }
 
     .filter-main-div-closed{
         position: fixed;                
-        margin-top: 6.99vh;
+        margin-top: 7vh;
         width: 80vw;         
         margin-left: -91vw !important;
         transition: .5s ease-in-out;
         background: rgba(255,255,255, .85);
+        border-width: 1px;
+        border-style: solid;
+        border-image:
+        linear-gradient(to top, black, rgba(0, 0, 0, 0)) 1 100%;
+        border-left: none;
     }
 
     .filter-tab-button-open{
-        margin-left: 66vw !important;
+        margin-left: 66vw !important;    
         transition: .2s ease-in-out;
     }
 
     .filter-tab-button-closed{
-        margin-left: 77vw !important;
+        margin-left: 77vw !important;        
         transition: .8s ease-in-out;
     }
 
@@ -34,7 +42,7 @@
         justify-content: center;
         align-items: flex-end;
         /* padding: 0 15px; */
-                    
+        border: 1px solid black;        
         border-top: none;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -42,7 +50,7 @@
         width: 140px; 
         transform: rotate(-90deg);    
         height: 36px;    
-        background: rgba(0,0,0, .5);
+        /* background: rgba(0,0,0, .8); */
     }
 
     .filter-button-span{
@@ -51,7 +59,7 @@
         font-weight: 500;
         padding: 5px; 
         font-size: 17px;  
-        color: white;            
+        color: black;            
       }
       .filter-tool-main-div{
           height: 93vh;

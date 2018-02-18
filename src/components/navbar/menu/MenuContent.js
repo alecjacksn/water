@@ -20,15 +20,12 @@ class MenuContent extends Component {
                 style={{ backgroundColor: 'rgba(239,239,239, 1)' }}
             >
                 <SubMenu style={{ backgroundColor: 'rgba(239,239,239, 1)' }} key="sub1" title={<span><img style={{width: '27px', height: '27px', marginLeft: '-20px', marginRight: '10px'}}src={boy} /><span>Shop Men</span></span>}>
-                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="1"><Link to="/men/watches">Watches</Link></Menu.Item>
-                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="2">Option 2</Menu.Item>
-                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="3">Option 3</Menu.Item>
-                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="4">Option 4</Menu.Item>
-
+                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="1"><Link to="/mens/watches">Watches</Link></Menu.Item>
+                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="2"><Link to="/mens/sunglasses">Sunglasses</Link></Menu.Item>                    
                 </SubMenu>
                 <SubMenu style={{ backgroundColor: 'rgba(239,239,239, 1)' }} key="sub2" title={<span><img style={{width: '25px', height: '25px', marginLeft: '-20px', marginRight: '10px'}}src={girl} /><span>Shop Women</span></span>}>
-                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="5">Option 5</Menu.Item>
-                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="6">Option 6</Menu.Item>
+                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="5"><Link to="/womens/watches">Watches</Link></Menu.Item>
+                    <Menu.Item style={{ padding: '0', margin: '0', backgroundColor: 'rgba(239, 239, 239, 1' }} key="6"><Link to="/womens/sunglasses">Sunglasses</Link></Menu.Item>
 
                 </SubMenu>            
             </Menu>

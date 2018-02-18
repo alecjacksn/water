@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    transition: .5s ease;
+    transition: .5s ease;    
+    /* background: rgba(221,221,223, 1) */
     /* margin-left: -80vw; */
   }
 
@@ -15,7 +16,7 @@
     background: rgba(255,255,255, .85);
     width: 100vw;
     height: 7vh;  
-    transition: .5s ease-in-out;  
+    transition: .5s ease-in-out;      
 }
 
   .navbar-container{
