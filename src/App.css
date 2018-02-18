@@ -1,0 +1,48 @@
+@media (max-width: 450px) {
+
+  .home-page-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s ease;
+    /* margin-left: -80vw; */
+  }
+
+  .navbar-container-scrolled{
+    position: fixed;
+    top: 0;
+    margin-bottom: 10% !important;
+    background: rgba(255,255,255, .85);
+    width: 100vw;
+    height: 7vh;  
+    transition: .5s ease-in-out;  
+}
+
+  .navbar-container{
+    position: fixed;
+    top: 0;
+    margin-bottom: 10% !important;
+    background: rgba(255,255,255, .0);
+    width: 100vw;
+    height: 7vh; 
+    transition: .5s ease-in-out;
+  }
+
+  .home-page-main-content{
+    
+    margin-top: 30%;
+  }
+
+  .home-page-filter-span{
+    
+  }
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

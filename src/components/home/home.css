@@ -1,0 +1,63 @@
+@media (max-width: 450px) {
+
+    .home-main-picture-div{
+        margin-top: -20vh;
+        position: relative;
+        top: 0;
+        text-align: center;
+        z-index: -5;
+        color: white;
+    }
+    /* .home-picture-simple{
+        position: absolute;
+        top: 20vh;
+        left: 16px;
+        color: #555;
+        opacity: .6;
+        font-size: 28px;        
+    } */
+
+    .home-under-pic-header{
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        word-spacing: 3px;
+        color: rgba(0,0,0, .6);
+    }
+
+    .home-shop-mens-button{
+        background: rgba(0,0,0, .6) !important;
+        border: none;
+        width: 60%;
+        height: 40px;
+        margin-top: 30px;
+        position: relative;
+        z-index: 5;
+        border-radius: 4px;
+    }
+
+    .home-shop-mens-button-test{
+        background: rgba(0,0,0, .75) !important;
+        border: none;
+        width: 60%;
+        height: 40px;
+        margin-top: 30px;                
+        border-radius: 4px;
+        color: white;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 100;
+        
+    }
+
+
+    .home-under-picture-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;                
+    }
+
+}
