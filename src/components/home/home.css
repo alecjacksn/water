@@ -8,6 +8,13 @@
 
 }
 
+
+.home-pictures-div{
+    width: 100vw;
+    height: 70%;
+    background: steelblue;
+}
+
 @media (max-width: 450px) {
 
     .home-main-picture-div{

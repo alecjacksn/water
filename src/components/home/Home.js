@@ -8,32 +8,49 @@ import Products2 from '../tools/ProductGenerator'
 import { updateMobileWidth } from '../../ducks/Reducer'
 
 class Home extends Component {
-    
+    constructor() {
+        super()
 
-    
+        this.state = {
+            mobile: null
+        }
+        this.updateMobileWidth = this.updateMobileWidth.bind(this)
+    }
+
+
+    updateMobileWidth(tf) {
+        if (window.innerWidth > 400) {
+            this.setState({ mobile: false })
+        } else {
+            this.setState({ mobile: true })
+        }
+    }
 
     componentDidMount() {
-        this.props.updateMobileWidth()
-        window.addEventListener("resize", this.props.updateMobileWidth)
+        this.updateMobileWidth()
+        window.addEventListener("resize", this.updateMobileWidth)
     }
 
     componentWillUnmount() {
-        window.removeEventListener("resize", this.props.updateMobileWidth)
+        window.removeEventListener("resize", this.updateMobileWidth)
     }
     render() {
-        console.log("THIS PROPS", this.props.mobile)
-        var windowWidth = window.innerWidth > 1200 ? true : false
+
         // console.log("WINDOW WIDTH", window.innerWidth)
-        
+
         return (
             <div className="home-main-container">
                 <div>
                     <div className="home-main-picture-div">
                         <div className="cover-gradient">
-                            {this.props.mobile ?
-                                <img src={CoverPhoto} className="home-main-img" />
+                            {this.state.mobile ?
+                                <div className="home-mobile-pictures-div">
+                                    <img src={CoverPhoto} className="home-main-img" />
+                                </div>
                                 :
-                                <img src={CoverPhoto} className="home-main-img-hidden" />                                
+                                <div className="home-pictures-div">
+                                    <img src={CoverPhoto} className="home-main-img-hidden" />
+                                </div>
                             }
                         </div>
                         {/* <span className="home-picture-simple">Simple</span> */}
@@ -63,4 +80,4 @@ function mapStateToProps(state) {
     return state
 }
 
-export default connect(mapStateToProps, {updateMobileWidth})(Home)
+export default connect(mapStateToProps, { updateMobileWidth })(Home)

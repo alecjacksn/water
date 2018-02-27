@@ -45,7 +45,7 @@
 
     .aw{    
         display: inline-block;
-        transform: rotate(180deg) translate(0px, 2px) !important;    
+        transform: rotate(180deg) translate(0px, 1px) !important;    
 
         direction: rtl;
         unicode-bidi: bidi-override;     
