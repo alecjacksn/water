@@ -31,7 +31,7 @@ class App extends Component {
   }
 
 
-  render() {        
+  render() {   
     return (
       <div className="home-page-container">
         <div className="home-page-filter">
@@ -41,7 +41,7 @@ class App extends Component {
 
           {window.location.pathname !== "/" ? <Filter /> : null}
         </div>
-        <div className={this.state.pagePos ? 'navbar-container' : 'navbar-container-scrolled'}>
+        <div className={this.state.pagePos ? 'navbar-scrolled-false' : 'navbar-scrolled-true'}>
           <NavBar />
         </div>
         <div className="home-page-main-content">

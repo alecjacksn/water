@@ -20,11 +20,11 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="navbar-container">
         <MenuTab tabOpen={this.state.tabOpen} />
         <div className="navbar-main-div">
           <div className="logo-search-div">
-            <Link className='navbar-logo' to='/'>WATER</Link>
+            <Link className='navbar-logo' to='/'><span>WAT</span><span className="aw">E</span>R</Link>
             <Icon style={{marginLeft: "15px", fontSize: "20px", fontWeight: 800}} type="search" />
           </div>
           <div>
